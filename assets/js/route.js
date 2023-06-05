@@ -12,15 +12,6 @@ const defaultLocation = "#/weather?37.2502200&-119.7512600"; // Los Angeles
 
 const currentLocation = function () {
   window.location.hash = defaultLocation;
-  // window.navigator.geolocation.getCurrentPosition(
-  //   (res) => {
-  //     const { latitude, longitude } = res.coords;
-  //     updateWeather(`${latitude}`, `${longitude}`);
-  //   },
-  //   (err) => {
-  //     window.location.hash = defaultLocation;
-  //   }
-  // );
 };
 
 /**
