@@ -8,18 +8,19 @@
 "use strict";
 
 import { updateWeather, error404 } from "./app";
-const defaultLocation = "#/weather?lat=34.052235&lon=-118.243683"; // Los Angeles
+const defaultLocation = "#/weather?37.2502200&-119.7512600"; // Los Angeles
 
 const currentLocation = function () {
-  window.navigator.geolocation.getCurrentPosition(
-    (res) => {
-      const { latitude, longitude } = res.coords;
-      updateWeather(`${latitude}`, `${longitude}`);
-    },
-    (err) => {
-      window.location.hash = defaultLocation;
-    }
-  );
+  window.location.hash = defaultLocation;
+  // window.navigator.geolocation.getCurrentPosition(
+  //   (res) => {
+  //     const { latitude, longitude } = res.coords;
+  //     updateWeather(`${latitude}`, `${longitude}`);
+  //   },
+  //   (err) => {
+  //     window.location.hash = defaultLocation;
+  //   }
+  // );
 };
 
 /**
