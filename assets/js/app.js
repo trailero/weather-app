@@ -186,19 +186,19 @@ export const updateWeather = function (lat, lon) {
                     <span class="m-icon">air</span>
                     <ul class="card-list">
                       <li class="card-item">
-                        <p class="title-1">${Number(pm2_5).toPrecision(3)}</p>
+                        <p class="title-1">${Number(pm2_5).toPrecision(2)}</p>
                         <p class="label-1">PM <sub>2.5</sub></p>
                       </li>
                       <li class="card-item">
-                        <p class="title-1">${Number(so2).toPrecision(3)}</p>
+                        <p class="title-1">${Number(so2).toPrecision(2)}</p>
                         <p class="label-1">SO<sub>2</sub></p>
                       </li>
                       <li class="card-item">
-                        <p class="title-1">${Number(no2).toPrecision(3)}</p>
+                        <p class="title-1">${Number(no2).toPrecision(2)}</p>
                         <p class="label-1">NO<sub>2</sub></p>
                       </li>
                       <li class="card-item">
-                        <p class="title-1">${Number(o3).toPrecision(3)}</p>
+                        <p class="title-1">${Number(o3).toPrecision(2)}</p>
                         <p class="label-1">O<sub>3</sub></p>
                       </li>
                     </ul>
@@ -252,7 +252,7 @@ export const updateWeather = function (lat, lon) {
                   <h3 class="title-3">Visibility</h3>
                   <div class="wrapper">
                     <span class="m-icon">visibility</span>
-                    <p class="title-1">${visibility / 1000}<sub>km</sub></p>
+                    <p class="title-1">${module.kmToMiles(visibility / 1000)}<sub>mi</sub></p>
                   </div>
                 </div>
                 <div class="card card-sm highlight-card">

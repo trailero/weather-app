@@ -93,6 +93,11 @@ export const celsiusToFahrenheit =  gradosCelsius => {
   return gradosFahrenheit;
 }
 
+export const kmToMiles = kilometer => {
+  var miles = (kilometer / 1.60934).toFixed(1);
+  return miles;
+}
+
 export const aqiText = {
   1: {
     level: "Good",
