@@ -198,7 +198,7 @@ export const updateWeather = function (lat, lon) {
                         <p class="label-1">NO<sub>2</sub></p>
                       </li>
                       <li class="card-item">
-                        <p class="title-1">${Number(o3).toPrecision(2)}</p>
+                        <p class="title-1">${Number(o3).toPrecision(3)}</p>
                         <p class="label-1">O<sub>3</sub></p>
                       </li>
                     </ul>
