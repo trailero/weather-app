@@ -144,7 +144,7 @@ export const updateWeather = function (lat, lon) {
           module.celsiusToFahrenheit(temp)
         )}&deg;<sup>F</sup></p>
         <img
-          src="./assets/images/weather_icons/${icon}.png"
+          src="./images/weather_icons/${icon}.png"
           alt="${description}"
           width="64"
           height="64"
@@ -289,7 +289,6 @@ export const updateWeather = function (lat, lon) {
           weather,
           wind: { deg: windDirection, speed: windSpeed },
         } = data;
-        console.log(dateTimeUnix, timezone);
         const [{ icon, description }] = weather;
         const tempLi = document.createElement("li");
         tempLi.classList.add("slider-item");
@@ -297,7 +296,7 @@ export const updateWeather = function (lat, lon) {
             <div class="card card-sm slider-card">
                 <p class="body-3">${module.getHours(dateTimeUnix, timezone)}</p>
                   <img
-                    src="./assets/images/weather_icons/${icon}.png"
+                    src="./images/weather_icons/${icon}.png"
                     alt="${description}"
                     width="48"
                     height="48"
@@ -318,7 +317,7 @@ export const updateWeather = function (lat, lon) {
           <div class="card card-sm slider-card">
             <p class="body-3">${module.getHours(dateTimeUnix, timezone)}</p>
               <img
-                src="./assets/images/weather_icons/direction.png"
+                src="./images/weather_icons/direction.png"
                 alt="image"
                 width="48"
                 height="48"
@@ -351,7 +350,7 @@ export const updateWeather = function (lat, lon) {
         li.innerHTML = `
           <div class="icon-wrapper">
             <img
-              src="./assets/images/weather_icons/${icon}.png"
+              src="./images/weather_icons/${icon}.png"
               width="36"
               height="36"
               alt="${description}"
