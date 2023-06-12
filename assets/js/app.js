@@ -276,7 +276,7 @@ export const updateWeather = function (lat, lon) {
             </div>
       `;
       for (const [index, data] of forecastList.entries()) {
-        if (index > 7) break;
+        if (index > 6) break;
         const {
           dt: dateTimeUnix,
           main: { temp },
@@ -319,7 +319,7 @@ export const updateWeather = function (lat, lon) {
                 style="transform: rotate(${windDirection - 180}deg)"
                 class="weather-icon"
               />
-              <p class="body-3">${parseInt(windSpeed)} m/s</p>
+              <p class="body-3">${parseInt(windSpeed)} mi/s</p>
           </div>
         `;
         hourlySection.querySelector("[data-wind]").appendChild(windLi);
