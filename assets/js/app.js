@@ -277,6 +277,9 @@ export const updateWeather = function (lat, lon) {
       `;
       for (const [index, data] of forecastList.entries()) {
         if (index > 6) break;
+        if (screen.width < 768) {
+          if (index > 2) break;
+        }
         const {
           dt: dateTimeUnix,
           main: { temp },
