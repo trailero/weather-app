@@ -8,7 +8,7 @@
 "use strict";
 
 import { updateWeather, error404 } from "./app";
-const defaultLocation = "#/weather?37.2502200&-119.7512600"; // Los Angeles
+const defaultLocation = "#/weather?34.05223&-118.24368"; // Los Angeles
 
 const currentLocation = function () {
   window.location.hash = defaultLocation;
