@@ -793,7 +793,7 @@ section:not(:last-child) {
 /**
   * responsive for large than 768px screen
 */
-@media (min-width: 768px) {
+@media only screen and (min-device-width: 768px) and (min-device-width: 810px) and (max-device-width: 1080px) and (min-device-pixel-ratio: 2) {
   /**
       * REUSED STYLE
     */
@@ -836,7 +836,7 @@ section:not(:last-child) {
     clip-path: circle(3% at calc(100% - 273px) 6%);
   }
   .logo img {
-    width: 50%;
+    width: 80%;
   }
   /**
       * MAIN
