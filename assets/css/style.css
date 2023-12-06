@@ -835,6 +835,9 @@ section:not(:last-child) {
   .search-view {
     clip-path: circle(3% at calc(100% - 273px) 6%);
   }
+  .logo img {
+    width: 50px;
+  }
   /**
       * MAIN
     */
