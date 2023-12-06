@@ -836,7 +836,7 @@ section:not(:last-child) {
     clip-path: circle(3% at calc(100% - 273px) 6%);
   }
   .logo img {
-    width: 50px;
+    width: 50%;
   }
   /**
       * MAIN
@@ -933,7 +933,7 @@ section:not(:last-child) {
     display: none;
   }
   .logo img {
-    width: 200px;
+    width: 100%;
   }
   .header {
     position: relative;
