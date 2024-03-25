@@ -12,9 +12,9 @@
 :root {
   --primary: #b5a1e5;
   --on-primary: #100e17;
-  --background: #131214;
+  --background: #0f1618;
   --on-background: #eae6f2;
-  --surface: #1d1c1f;
+  --surface: #2d343f;
   --on-surface: #dddae5;
   --on-surface-variant: #7b7980;
   --on-surface-variant-2: #b9b6bf;
@@ -1031,6 +1031,6 @@ section:not(:last-child) {
 */
 @media (min-width: 1400px){ 
   .highlight-list {
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 }
